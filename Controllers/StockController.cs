@@ -24,7 +24,7 @@ public class StockController: ControllerBase //base class designed to handle htt
     [HttpGet("{id}")]
     public IActionResult GetById([FromRoute] int id) //Model binding, .net extracts the id as string and turns it into id
     {
-        var stock = _context.Stocks.Find();
+        var stock = _context.Stocks.Find(id);
         if (stock == null) return NotFound();
         return Ok(stock);
     }
