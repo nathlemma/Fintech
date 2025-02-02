@@ -1,0 +1,18 @@
+# Rider/IDE-specific settings
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build output folders
+bin/
+obj/
+
+# Logs and caches
+*.log
+*.cache
+
+# Dependency cache (if any)
+packages/
